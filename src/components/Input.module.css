@@ -1,0 +1,28 @@
+.input {
+    background-color: var(--gray-500);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    width: 736px;
+    margin-top: -2rem;
+}
+
+.input::placeholder {
+    color: var(--gray-300);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 2px var(--purple-300);
+}
+
+.input:hover {
+    box-shadow: 0 0 0 2px var(--purple-200);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
