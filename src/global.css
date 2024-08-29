@@ -20,11 +20,6 @@
     --normal-font: 1rem;
 }
 
-:focus {
-    outline: transparent !important;
-    box-shadow: 0 0 0 2px var(--purple-300);
-}
-
 * {
     margin: 0;
     padding: 0;
