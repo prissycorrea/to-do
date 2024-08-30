@@ -1,6 +1,5 @@
 :root {
-    /* Colors */
-    --blue-200: #4EA8DE
+    --blue-200: #4EA8DE;
     --blue-300: #1E6F9F;
     --gray-700: #0D0D0D;
     --gray-600: #1A1A1A;
@@ -14,7 +13,6 @@
     --red-200: #E25858;
     --white: #ffffff;
 
-    /* Font sizes */
     --small-font: 0.75rem;
     --medium-font: 0.875rem;
     --normal-font: 1rem;
@@ -30,6 +28,7 @@ body {
     background: var(--gray-600);
     color: var(--white);
     -webkit-font-smoothing: antialiased; /* Fontes mais nítidas */
+    height: 100vh;
 }
 
 body, input, textarea, button {

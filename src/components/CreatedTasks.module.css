@@ -1,0 +1,54 @@
+.container {
+
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.tasksContainerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.tasksHeader {
+    display: flex;
+    font-size: var(--medium-font);
+    font-weight: bold;
+}
+
+.tasksHeader p:nth-child(1){
+    color: var(--blue-200);
+}
+
+.tasksHeader p:nth-child(2){
+    margin-left: 10px;
+    padding: 3px 5px;
+    background-color: var(--gray-400);
+    border-radius: 40%;
+    font-size: var(--small-font);
+}
+
+.tasksHeader:nth-of-type(2) .tasksHeaderText {
+    color: var(--purple-200);
+}
+
+.containerTasks {
+    margin-top: 1rem;
+    border-top: 2px solid var(--gray-400);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #808080;
+}
+
+.containerTasks img {
+    margin: 5rem 0 1.5rem 0;
+}
+
+.containerTasks p:nth-of-type(1) {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
