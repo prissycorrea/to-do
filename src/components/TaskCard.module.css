@@ -1,0 +1,118 @@
+.taskCardContainer {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--gray-500);
+    margin: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Começa invisível para animação de fade-in */
+    animation: fadeIn 0.5s forwards; /* Animação de adicionar */
+}
+
+.taskCardContainer p {
+    font-size: var(--medium-font);
+    font-weight: normal;
+}
+
+.taskCard {
+    display: flex;
+    width: 80%;
+}
+
+.taskCardContainer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.taskCard button:nth-of-type(1) {
+    margin-right: 12px;
+    color: var(--blue-200);
+}
+
+.taskCardContainer .iconCircle:hover {
+    color: #1E6F9F !important;
+    transition: all 0.1s;
+}
+
+.taskCardContainer > button:nth-of-type(1) {
+    border-radius: 4px;
+    padding: 4px 2px 0 2px;
+}
+
+.taskCardContainer > button:nth-of-type(1):hover {
+    color: var(--red-200);
+    background-color: var(--gray-200);
+    transition: all 0.1s;
+}
+
+.taskCardChecked {
+    text-decoration: line-through;
+    display: flex;
+    width: 80%;
+}
+
+.taskCardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f5;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Começa mais abaixo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Volta à posição original */
+    }
+  }
+  
+  .removing {
+    opacity: 0;
+    transform: translateX(-20px); /* Desliza suavemente para a esquerda ao remover */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animação de remoção */
+  }
+  
+  .completing {
+    transform: translateX(20px); /* Desliza suavemente para a direita ao concluir */
+    transition: transform 0.3s ease; /* Animação de conclusão */
+  }
+  
+  .circleButton {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Animação para o botão de círculo */
+  }
+  
+  .completed {
+    color: #4CAF50; /* Cor do ícone quando a tarefa é concluída */
+    transform: scale(1.1); /* Leve aumento de escala ao concluir */
+  }
+  
+  .completedText {
+    text-decoration: line-through;
+    color: #6B7280;
+    transition: color 0.3s ease; /* Transição de cor ao concluir */
+  }
+  
+  .taskCard label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .taskCard p {
+    margin-left: 10px;
+    transition: color 0.3s ease; /* Transição suave para o texto */
+  }

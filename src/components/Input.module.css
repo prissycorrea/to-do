@@ -25,5 +25,28 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: -2rem;
+    margin-top: -7rem;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .input {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .input {
+        width: 80%;
+    }
 }
