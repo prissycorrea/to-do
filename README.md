@@ -4,7 +4,7 @@
 
 Um aplicativo de lista de tarefas simples e eficiente, construído com **React**, **TypeScript** e **Vite** para ajudar você a organizar suas atividades diárias de forma rápida e fácil.
 
-### 🌐 [Acesse a Demonstração ao Vivo](https://prissycorrea.github.io/to-do/)
+### 🌐 <a href="https://prissycorrea.github.io/to-do/" target="_blank">Acesse a Demonstração ao Vivo</a>
 
 ## 🌟 Funcionalidades
 
