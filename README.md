@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# 📝 To Do - Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="https://github.com/prissycorrea/to-do/blob/main/public/Captura%20de%20tela%202024-09-09%20093612.png?raw=true" width="800">
 
-Currently, two official plugins are available:
+Um aplicativo de lista de tarefas simples e eficiente, construído com **React**, **TypeScript** e **Vite** para ajudar você a organizar suas atividades diárias de forma rápida e fácil.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🌐 [Acesse a Demonstração ao Vivo](https://prissycorrea.github.io/to-do/)
 
-## Expanding the ESLint configuration
+## 🌟 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ✅ Adicionar, editar e remover tarefas.
+- 📦 Armazenamento local para manter suas tarefas salvas.
+- 📱 Responsivo para todos os dispositivos.
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **React** - Biblioteca JavaScript para construir interfaces de usuário.
+- **Vite** - Ferramenta de build rápida e otimizada para desenvolvimento front-end moderno.
+- **TypeScript** - Superset de JavaScript que adiciona tipagem estática ao código, ajudando a evitar bugs e melhorar a manutenção.
+- **CSS Modules** - Estilização modular e escopo para componentes.
+- **React Icons** - Ícones para uma melhor experiência visual.
