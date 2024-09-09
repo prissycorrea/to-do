@@ -68,7 +68,7 @@ export function TaskCard({ task, onDelete, onToggleCompletion, onEdit }: TaskCar
           onClick={handleCompletionToggle}
         >
           {task.completed ? (
-            <CheckCircle size={24} className={styles.iconCircle} />
+            <CheckCircle size={24} weight="fill" className={styles.iconCheckCircle} />
           ) : (
             <Circle size={24} className={styles.iconCircle} />
           )}

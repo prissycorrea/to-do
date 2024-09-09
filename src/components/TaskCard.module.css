@@ -3,7 +3,7 @@
     width: 80vw;
     justify-content: space-between;
     padding: 1rem;
-    background-color: var(--gray-500);
+    background: var(--gray-500) !important;
     margin: 1rem;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
@@ -44,6 +44,7 @@
 .deleteButton, .editButton {
     border-radius: 4px;
     padding: 4px 2px 0 2px;
+    color: var(--white);
 }
 
 .deleteButton:hover {
@@ -62,6 +63,10 @@
     text-decoration: line-through;
     display: flex;
     width: 80%;
+}
+.iconCheckCircle {
+  color: var(--purple-200);
+  fill: var(--purple-200);
 }
 
 .taskCardContainer {
@@ -119,6 +124,8 @@
     padding: 0.5rem;
     font-size: var(--medium-font);
     width: 100%;
+    background-color: var(--gray-500);
+    color: var(--white);
   }
   
   .completed {
