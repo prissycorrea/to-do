@@ -21,6 +21,10 @@
     width: 80%;
 }
 
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+}
 .taskCardContainer button {
     background: none;
     border: none;
@@ -37,15 +41,21 @@
     transition: all 0.1s;
 }
 
-.taskCardContainer > button:nth-of-type(1) {
+.deleteButton, .editButton {
     border-radius: 4px;
     padding: 4px 2px 0 2px;
 }
 
-.taskCardContainer > button:nth-of-type(1):hover {
+.deleteButton:hover {
     color: var(--red-200);
-    background-color: var(--gray-200);
+    background-color: var(--gray-400);
     transition: all 0.1s;
+}
+
+.editButton:hover {
+  color: var(--blue-200);
+  background-color: var(--gray-400);
+  transition: all 0.1s;
 }
 
 .taskCardChecked {
@@ -93,6 +103,22 @@
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease; /* Animação para o botão de círculo */
+  }
+
+  .editButton, .deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+
+
+  .editInput {
+    border: 1px solid var(--gray-300);
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: var(--medium-font);
+    width: 100%;
   }
   
   .completed {
